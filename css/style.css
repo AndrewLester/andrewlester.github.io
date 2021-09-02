@@ -1,0 +1,152 @@
+:root {
+    --font-heading: 'Noto Sans', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --navy: rgb(34, 87, 122);
+    --teal: rgb(56, 163, 165);
+    --turquoise: rgb(87, 204, 153);
+    --green: rgb(128, 237, 153);
+    --transition-duration: 200ms;
+}
+
+*, ::after, ::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    opacity: 0.95;
+}
+
+h1, h2 {
+    color: var(--navy);
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.25;
+    margin-bottom: 15px;
+}
+
+a {
+    font-weight: bold;
+    color: white;
+    color: rgb(243, 180, 64);
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+section {
+    min-height: 50vh;
+}
+
+img.portrait {
+    width: 200px;
+    border-radius: 50%;
+}
+
+section.callout {
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    padding: 50px;
+    text-align: center;
+}
+
+section.callout>* {
+    margin: 20px;
+}
+
+section.description {
+    position: relative;
+    background-color: var(--teal);
+    color: white;
+    z-index: 2;
+    padding: 60px;
+}
+
+section.description p {
+    opacity: 0.95;
+}
+
+section.description>p {
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.social {
+    text-decoration: none;
+}
+
+a.social:focus {
+    outline: none;
+}
+
+button.social {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: inherit;
+    transition: background-color var(--transition-duration) ease;
+}
+
+a.social:focus>button.social, button.social:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+button.social:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#email-link {
+    color: rgb(211, 56, 56);
+}
+
+#github-link {
+    color: black;
+}
+
+#linkedin-link {
+    color: #0b65c2;
+}
+
+#resume-link {
+    color: var(--teal);
+}
+
+.custom-shape-divider-top-1630563901 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1630563901 svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 40px;
+}
+
+.custom-shape-divider-top-1630563901 .shape-fill {
+    fill: #FFFFFF;
+}
