@@ -1,10 +1,12 @@
 const emailReplacements = {
-    'AT' : '@',
-    'DOT': '.',
+    AT: '@',
+    DOT: '.',
 };
-const email = document.getElementById('email-link');
+const emails = document.getElementsByClassName('email-link');
 
-for (let replacer in emailReplacements) {
-    const replacement = emailReplacements[replacer];
-    email.href = email.href.replace(replacer, replacement);
+for (const email of emails) {
+    for (const replacer in emailReplacements) {
+        const replacement = emailReplacements[replacer];
+        email.href = email.href.replace(replacer, replacement);
+    }
 }

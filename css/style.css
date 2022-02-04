@@ -55,9 +55,6 @@ img.portrait {
 }
 
 section.callout {
-    top: 0;
-    position: sticky;
-    z-index: 1;
     padding: 50px;
     text-align: center;
 }
@@ -67,10 +64,8 @@ section.callout>* {
 }
 
 section.description {
-    position: relative;
     background-color: var(--teal);
     color: white;
-    z-index: 2;
     padding: 60px;
 }
 
@@ -108,11 +103,11 @@ button.social {
 }
 
 a.social:focus>button.social, button.social:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 button.social:active {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #email-link {
@@ -129,24 +124,4 @@ button.social:active {
 
 #resume-link {
     color: var(--teal);
-}
-
-.custom-shape-divider-top-1630563901 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1630563901 svg {
-    position: relative;
-    display: block;
-    width: calc(150% + 1.3px);
-    height: 40px;
-}
-
-.custom-shape-divider-top-1630563901 .shape-fill {
-    fill: #FFFFFF;
 }
