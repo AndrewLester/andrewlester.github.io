@@ -26,73 +26,196 @@
     </head>
 
     <body>
-        <section class="callout">
-            <h1>Andrew Lester</h1>
-            <img class="portrait" src="/assets/images/portrait.png" />
-            <div class="row">
-                <a
-                    href="mailto:alester3ATillinoisDOTedu"
-                    id="email-link"
-                    class="social email-link"
-                >
-                    <button class="social" tabindex="-1">
-                        <svg height="30" width="30">
-                            <use xlink:href="/assets/icons.svg#email"></use>
-                        </svg>
-                        Email
-                    </button>
-                </a>
-                <a
-                    href="https://github.com/AndrewLester"
-                    id="github-link"
-                    class="social"
-                >
-                    <button class="social" tabindex="-1">
-                        <svg height="30" width="30">
-                            <use xlink:href="/assets/icons.svg#github"></use>
-                        </svg>
-                        Github
-                    </button>
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/andrew-s-lester/"
-                    id="linkedin-link"
-                    class="social"
-                >
-                    <button class="social" tabindex="-1">
-                        <svg height="30" width="30">
-                            <use xlink:href="/assets/icons.svg#linkedin"></use>
-                        </svg>
-                        Linkedin
-                    </button>
-                </a>
-                <a
-                    href="/assets/files/resume.pdf"
-                    id="resume-link"
-                    class="social"
-                >
-                    <button class="social" tabindex="-1">
-                        <svg height="30" width="30">
-                            <use xlink:href="/assets/icons.svg#resume"></use>
-                        </svg>
-                        Resume
-                    </button>
-                </a>
-            </div>
-        </section>
-        <section class="description">
-            <p>
-                Hi! I'm a freshman at UIUC studying computer science, and I'm
-                interested in writing software to solve problems in my
+        <section id="intro">
+            <header>
+                <img class="portrait" src="/assets/images/portrait.jpg" />
+                <div>
+                    <h1>Andrew Lester</h1>
+                    <div class="social-row">
+                        <a
+                            href="mailto:alester3ATillinoisDOTedu"
+                            id="email-link"
+                            class="social email-link"
+                        >
+                            <button class="social" tabindex="-1">
+                                <svg height="30" width="30">
+                                    <use
+                                        xlink:href="/assets/icons.svg#email"
+                                    ></use>
+                                </svg>
+                                Email
+                            </button>
+                        </a>
+                        <a
+                            href="https://github.com/AndrewLester"
+                            id="github-link"
+                            class="social"
+                        >
+                            <button class="social" tabindex="-1">
+                                <svg height="30" width="30">
+                                    <use
+                                        xlink:href="/assets/icons.svg#github"
+                                    ></use>
+                                </svg>
+                                Github
+                            </button>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/andrew-s-lester/"
+                            id="linkedin-link"
+                            class="social"
+                        >
+                            <button class="social" tabindex="-1">
+                                <svg height="30" width="30">
+                                    <use
+                                        xlink:href="/assets/icons.svg#linkedin"
+                                    ></use>
+                                </svg>
+                                Linkedin
+                            </button>
+                        </a>
+                        <a
+                            href="/assets/files/resume.pdf"
+                            id="resume-link"
+                            class="social"
+                        >
+                            <button class="social" tabindex="-1">
+                                <svg height="30" width="30">
+                                    <use
+                                        xlink:href="/assets/icons.svg#resume"
+                                    ></use>
+                                </svg>
+                                Resume
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <p class="background">
+                Hi! I’m Andrew, a freshman at UIUC studying computer science.
+                I’m interested in writing software to solve problems in my
                 community. My technical experience involves robotics and IoT,
                 full stack development, Android and Flutter, Google Cloud, and
-                <a href="https://github.com/AndrewLester">more</a>.
+                more.
             </p>
-            <p>
-                My projects will show up here soon, but for the time being you
-                can find them on my
-                <a href="https://github.com/AndrewLester">Github page</a>.
+            <p class="background">
+                I’m currently a software developer intern at
+                <a
+                    href="https://www.psyonic.io/"
+                    id="psyonic-link"
+                    class="social"
+                >
+                    <button class="social" tabindex="-1">
+                        <img src="/assets/images/psyonic.png" width="30" />
+                        PSYONIC
+                    </button></a
+                >, and I’m a member of UIUC’s chapter of
+                <a
+                    href="https://uiuc.hack4impact.org/"
+                    id="hack4impact-link"
+                    class="social"
+                >
+                    <button class="social" tabindex="-1">
+                        <svg height="30" width="30">
+                            <use
+                                xlink:href="/assets/icons.svg#hack4impact"
+                            ></use>
+                        </svg>
+                        Hack4Impact
+                    </button></a
+                >.
             </p>
+        </section>
+        <section id="projects">
+            <div>
+                <h1>Projects</h1>
+                <div class="project">
+                    <div>
+                        <h2>
+                            <a
+                                href="https://www.updatescheduler.com/"
+                                id="update-scheduler-link"
+                                class="social"
+                            >
+                                <button class="social" tabindex="-1">
+                                    <img
+                                        src="/assets/images/update-scheduler-icon.png"
+                                        width="30"
+                                    />
+                                    Update Scheduler
+                                </button></a
+                            >
+                        </h2>
+                        <p>
+                            Update Scheduler is a web application for Schoology
+                            users to schedule their update posts anytime they
+                            want. With a rich text editor, unlimited update
+                            storage, and the ability to send a single update to
+                            multiple realms, Update Scheduler is a great
+                            Schoology addition for both teachers and students.
+                            With a user base of ~100, it’s a hit among
+                            educators.
+                        </p>
+                        <p>
+                            I created Update Scheduler so I could organize club
+                            meetings during my senior year of high school.
+                        </p>
+                    </div>
+                    <a href="https://www.updatescheduler.com">
+                        <video class="project-img" width="400" muted autoplay>
+                            <source
+                                src="/assets/videos/schedule-example.mp4"
+                                type="video/mp4"
+                            />
+                            Your browser does not support the video tag.
+                        </video>
+                    </a>
+                </div>
+                <div class="project">
+                    <div>
+                        <h2>
+                            <a
+                                href="https://www.updatescheduler.com/"
+                                id="update-scheduler-link"
+                                class="social"
+                            >
+                                <button class="social" tabindex="-1">
+                                    <img
+                                        src="/assets/images/update-scheduler-icon.png"
+                                        width="30"
+                                    />
+                                    Update Scheduler
+                                </button></a
+                            >
+                        </h2>
+                        <p>
+                            Update Scheduler is a web application for Schoology
+                            users to schedule their update posts anytime they
+                            want. With a rich text editor, unlimited update
+                            storage, and the ability to send a single update to
+                            multiple realms, Update Scheduler is a great
+                            Schoology addition for both teachers and students.
+                            With a user base of ~100, it’s a hit among
+                            educators.
+                        </p>
+                        <p>
+                            I created Update Scheduler so I could organize club
+                            meetings during my senior year of high school.
+                        </p>
+                    </div>
+                    <a href="https://www.updatescheduler.com">
+                        <video
+                            class="project-img"
+                            width="400"
+                            muted
+                            autoplay
+                            loop
+                        >
+                            Your browser does not support the video tag.
+                        </video>
+                    </a>
+                </div>
+            </div>
         </section>
         <script src="/js/index.js"></script>
     </body>
