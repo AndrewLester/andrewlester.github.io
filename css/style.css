@@ -45,6 +45,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 35px;
+    max-width: 100%;
 }
 
 img.portrait {
@@ -215,6 +216,9 @@ p.background:first-of-type {
 }
 
 @media only screen and (max-width: 700px) {
+    header {
+        gap: 10px;
+    }
     header div.social-row {
         gap: 30px;
         margin-left: -10px;
