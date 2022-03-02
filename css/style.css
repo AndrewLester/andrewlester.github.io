@@ -132,8 +132,12 @@ header div h1 {
 a.social {
     text-decoration: none;
     vertical-align: middle;
-    margin-right: calc(-1 * calc(1ch * 0.625));
     -webkit-tap-highlight-color: transparent;
+}
+
+a.social.inline {
+    margin-right: calc(-1 * calc(1ch * 0.625));
+    margin-left: calc(-1 * calc(1ch * 0.25));
 }
 
 a.social:focus {
@@ -148,8 +152,8 @@ button.social {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 24px;
-    padding: 5px 10px;
+    font-size: inherit;
+    padding: 5px 8px;
     border-radius: 5px;
     color: inherit;
     transition: background-color var(--transition-duration) ease;
@@ -184,6 +188,7 @@ div.social-row {
     flex-flow: row nowrap;
     gap: 10px;
     margin-left: -15px;
+    font-size: 24px;
 }
 
 p.background {
@@ -202,8 +207,12 @@ p.background:first-of-type {
 }
 
 @media only screen and (max-width: 900px) {
+    #projects h1 {
+        margin-bottom: 40px;
+    }
     #projects .project {
         flex-direction: column;
+        gap: 0px;
     }
     #projects .project img.project-img, #projects .project video.project-img {
         max-width: 100%;
@@ -211,18 +220,21 @@ p.background:first-of-type {
     #projects .project > a {
         align-self: center;
     }
-    #projects .project:nth-child(2n+1) > :last-child {
-        order: unset;
+    #projects .project > :last-child {
+        order: -1;
+        align-self: flex-start;
     }
 }
 
 @media only screen and (max-width: 700px) {
     header {
         gap: 10px;
+        flex-flow: column nowrap;
+        text-align: center;
     }
     header div.social-row {
         gap: 30px;
-        margin-left: -10px;
+        margin-left: -5px;
     }
     header button.social {
         width: 40px;
