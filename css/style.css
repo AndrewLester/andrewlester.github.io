@@ -35,10 +35,6 @@ body {
     width: 100%;
 }
 
-section {
-    min-height: 50vh;
-}
-
 header {
     display: flex;
     flex-flow: row nowrap;
