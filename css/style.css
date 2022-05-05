@@ -136,6 +136,11 @@ a.social.inline {
     margin-left: calc(-1 * calc(1ch * 0.25));
 }
 
+a.social.inline svg {
+    height: 1em;
+    width: 1em;
+}
+
 a.social:focus {
     outline: none;
 }

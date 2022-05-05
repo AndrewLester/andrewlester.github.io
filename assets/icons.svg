@@ -30,10 +30,15 @@
 -.6799.2932-1.2788.0124-.4429.0031-.5646-.0562-.8734-.156-.811-.0936-1.5564.2246-2.6669.0022-.0076.0052-.0177.0088-.0297.0211-.0716.063-.2138.1004-.3446.1684-.5864.4772-1.4753.8078-2.3393.0436-.1118.0851-.2195.1183-.3059z" fill="#0069ca" fill-rule="evenodd" />
     </symbol>
     <symbol id="typematch" style="fill: var(--icon-color, currentColor);" viewBox="0 0 24 24">
-        <path d="M0 0h24v24H0V0z" fill="black"/><path d="M5 4v3h5.5v12h3V7H19V4H5z"/>
+        <path d="M0 0h24v24H0V0z" fill="black" />
+        <path d="M5 4v3h5.5v12h3V7H19V4H5z" />
     </symbol>
     <symbol id="hackillinois" style="fill: var(--icon-color, currentColor);" viewBox="0 0 40 56">
-        <path xmlns="http://www.w3.org/2000/svg" d="M11.7268 22.6555H27.9698V12.5552H38.7016V0.353271H8.055L0.849609 12.5552H11.7268V22.6555Z" fill="#111130"/>
-        <path xmlns="http://www.w3.org/2000/svg" d="M27.9698 33.3134H11.7268V43.4137H0.849609V55.6156H31.7797L38.7016 43.4137H27.9698V33.3134Z" fill="#111130"/>
+        <path xmlns="http://www.w3.org/2000/svg" d="M11.7268 22.6555H27.9698V12.5552H38.7016V0.353271H8.055L0.849609 12.5552H11.7268V22.6555Z" fill="#111130" />
+        <path xmlns="http://www.w3.org/2000/svg" d="M27.9698 33.3134H11.7268V43.4137H0.849609V55.6156H31.7797L38.7016 43.4137H27.9698V33.3134Z" fill="#111130" />
+    </symbol>
+    <symbol id="viget" viewBox="0 0 29 27">
+        <circle cx="10" cy="17" r="10" fill="#1395ba"></circle>
+        <circle cx="23.5" cy="6.5" r="5.5" fill="#f16c20"></circle>
     </symbol>
 </svg>
