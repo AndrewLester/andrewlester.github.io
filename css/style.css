@@ -1,251 +1,260 @@
 :root {
-    --font-heading: 'Noto Sans', sans-serif;
-    --font-body: 'Roboto', sans-serif;
-    --navy: rgb(34, 87, 122);
-    --teal: rgb(54 151 153);
-    --turquoise: rgb(87, 204, 153);
-    --green: rgb(128, 237, 153);
-    --transition-duration: 200ms;
+  --font-heading: "Noto Sans", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --navy: rgb(34, 87, 122);
+  --teal: rgb(54 151 153);
+  --turquoise: rgb(87, 204, 153);
+  --green: rgb(128, 237, 153);
+  --transition-duration: 200ms;
 }
 
-*, ::after, ::before {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: var(--font-body);
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--font-body);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
-    opacity: 0.95;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  opacity: 0.95;
 }
 
 h1 {
-    font-size: 48px;
-    line-height: 1;
-    margin-bottom: 10px;
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
 p {
-    font-size: 22px;
-    line-height: 1.25;
-    margin-bottom: 15px;
+  font-size: 22px;
+  line-height: 1.25;
+  margin-bottom: 15px;
 }
 
 body {
-    min-height: 100vh;
-    width: 100%;
+  min-height: 100vh;
+  width: 100%;
 }
 
 header {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 35px;
-    max-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  max-width: 100%;
 }
 
 img.portrait {
-    width: 100px;
-    border-radius: 50%;
+  width: 100px;
+  border-radius: 50%;
 }
 
 #intro {
-    margin: 20px;
-    margin-top: 30px;
+  margin: 20px;
+  margin-top: 30px;
 }
 
-#intro h1, #intro h2 {
-    color: var(--navy);
+#intro h1,
+#intro h2 {
+  color: var(--navy);
 }
 
 #projects {
-    background-color: var(--teal);
-    color: white;
-    padding: 20px;
+  background-color: var(--teal);
+  color: white;
+  padding: 20px;
 }
 
 #projects > div {
-    max-width: 100%;
-    width: calc(60ch + 500px);
-    margin: 0px auto;
+  max-width: 100%;
+  width: calc(60ch + 500px);
+  margin: 0px auto;
 }
 
 #projects h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #projects h2 {
-    margin-left: -8px;
+  margin-left: -8px;
 }
 
 #projects h3 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #projects h2 button {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 #projects .project {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 30px;
-    align-items: flex-start;
-    margin-bottom: 65px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 65px;
 }
 
-#projects .project img.project-img, #projects .project video.project-img {
-    border-radius: 20px;
-    width: 400px;
+#projects .project img.project-img,
+#projects .project video.project-img {
+  border-radius: 20px;
+  width: 400px;
 }
 
-#projects .project:nth-child(2n+1) > :last-child {
-    order: -1;
+#projects .project:nth-child(2n + 1) > :last-child {
+  order: -1;
 }
 
 #projects p {
-    opacity: 0.95;
+  opacity: 0.95;
 }
 
-#projects>p {
-    max-width: 50ch;
-    margin-left: auto;
-    margin-right: auto;
+#projects > p {
+  max-width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #projects .social {
-    color: white;
+  color: white;
 }
 
 #projects a {
-    color: white;
+  color: white;
 }
 
 header div h1 {
-    font-size: clamp(30px, 4vw, 48px);
+  font-size: clamp(30px, 4vw, 48px);
 }
 
-a.social {
-    text-decoration: none;
-    vertical-align: middle;
-    -webkit-tap-highlight-color: transparent;
+.social {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: inherit;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  transition: background-color var(--transition-duration) ease;
 }
 
-a.social.inline {
-    margin-right: calc(-1 * calc(1ch * 0.625));
-    margin-left: calc(-1 * calc(1ch * 0.25));
+.social.inline {
+  display: inline;
+  margin-right: -8px;
+  margin-left: -4px;
+  vertical-align: baseline;
 }
 
-a.social.inline svg {
-    height: 1em;
-    width: 1em;
+.social.inline :where(svg, img) {
+  height: calc(1em + 3px);
+  width: calc(1em + 3px);
+  vertical-align: text-top;
 }
 
-a.social:focus {
-    outline: none;
+.social:focus,
+.social:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-button.social {
-    display: inline-flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: 5px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: inherit;
-    padding: 5px 8px;
-    border-radius: 5px;
-    color: inherit;
-    transition: background-color var(--transition-duration) ease;
-}
-
-a.social:focus>button.social, button.social:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-button.social:active {
-    background-color: rgba(0, 0, 0, 0.2);
+.social:active {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 #email-link {
-    color: rgb(211, 56, 56);
+  color: rgb(211, 56, 56);
 }
 
 #github-link {
-    color: black;
+  color: black;
 }
 
 #linkedin-link {
-    color: #0b65c2;
+  color: #0b65c2;
 }
 
 #resume-link {
-    color: var(--teal);
+  color: var(--teal);
 }
 
 div.social-row {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 10px;
-    margin-left: -15px;
-    font-size: 24px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  margin-left: -15px;
+  font-size: 24px;
 }
 
 p.background {
-    max-width: 55ch;
-    margin: 20px auto;
-    opacity: 0.85;
-    line-height: 1.5;
+  max-width: 55ch;
+  margin: 20px auto;
+  opacity: 0.85;
+  line-height: 1.5;
 }
 
 p.background .social {
-    color: black;
+  color: black;
 }
 
 p.background:first-of-type {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 @media only screen and (max-width: 900px) {
-    #projects h1 {
-        margin-bottom: 40px;
-    }
-    #projects .project {
-        flex-direction: column;
-        gap: 0px;
-    }
-    #projects .project img.project-img, #projects .project video.project-img {
-        max-width: 100%;
-    }
-    #projects .project > a {
-        align-self: center;
-    }
-    #projects .project > :last-child {
-        order: -1;
-        align-self: flex-start;
-    }
+  #projects h1 {
+    margin-bottom: 40px;
+  }
+  #projects .project {
+    flex-direction: column;
+    gap: 0px;
+  }
+  #projects .project img.project-img,
+  #projects .project video.project-img {
+    max-width: 100%;
+  }
+  #projects .project > a {
+    align-self: center;
+  }
+  #projects .project > :last-child {
+    order: -1;
+    align-self: flex-start;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-    header {
-        gap: 10px;
-        flex-flow: column nowrap;
-        text-align: center;
-    }
-    header div.social-row {
-        gap: 30px;
-        margin-left: -5px;
-    }
-    header button.social {
-        width: 40px;
-        overflow: hidden;
-        padding: 5px 5px;
-    }
-    header button.social svg, header button.social img {
-        flex: 1 0 30px;
-        width: 30px;
-    }
+  header {
+    gap: 10px;
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+  header div.social-row {
+    gap: 30px;
+    margin-left: -5px;
+  }
+  header button.social {
+    width: 40px;
+    overflow: hidden;
+    padding: 5px 5px;
+  }
+  header button.social svg,
+  header button.social img {
+    flex: 1 0 30px;
+    width: 30px;
+  }
 }
