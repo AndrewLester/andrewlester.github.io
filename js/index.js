@@ -15,8 +15,13 @@ const header = document.getElementById('intro-header');
 const headerFixed = document.createElement('header');
 headerFixed.id = 'intro-header-fixed';
 headerFixed.innerHTML = header.innerHTML;
-document.body.prepend(headerFixed);
 const projects = document.getElementById('projects');
+
+const diff = window.scrollY - projects.offsetTop;
+headerFixed.hidden = diff <= 0;
+
+document.body.prepend(headerFixed);
+
 window.onscroll = () => {
     const diff = window.scrollY - projects.offsetTop;
     headerFixed.classList.toggle('fixed', diff > 0);
@@ -25,7 +30,9 @@ window.onscroll = () => {
             0,
             diff - headerFixed.clientHeight
         )}px)`;
+        headerFixed.hidden = false;
     } else {
         headerFixed.style.transform = '';
+        headerFixed.hidden = true;
     }
 };
