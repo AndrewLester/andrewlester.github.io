@@ -6,6 +6,7 @@
     --turquoise: rgb(87, 204, 153);
     --green: rgb(128, 237, 153);
     --transition-duration: 200ms;
+    -webkit-font-smoothing: antialiased;
 }
 
 *,
