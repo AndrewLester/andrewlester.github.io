@@ -1,0 +1,48 @@
+main {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	gap: 2.5em;
+}
+
+h1 {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	justify-self: flex-end;
+	font-size: 33.333vh;
+	line-height: 1;
+	margin: 0;
+	overflow: hidden;
+}
+
+h1 > span {
+	font-family: "Roboto Mono";
+}
+
+section {
+	padding: 1em;
+}
+
+p {
+	margin-inline: 0;
+}
+
+@media (max-width: 600px) {
+	main {
+		grid-template-columns: unset;
+		grid-template-rows: 1fr 2fr;
+	}
+
+	h1 {
+		grid-template-rows: unset;
+		grid-template-columns: repeat(3, 1fr);
+		font-size: calc(100vw / 2);
+		justify-self: center;
+	}
+
+	section {
+		align-self: flex-start;
+	}
+}
