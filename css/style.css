@@ -345,6 +345,17 @@ p.background:first-of-type {
 	margin-top: 30px;
 }
 
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 @media only screen and (max-width: 900px) {
 	#projects h1 {
 		margin-bottom: 40px;
