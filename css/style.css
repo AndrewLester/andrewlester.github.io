@@ -68,6 +68,36 @@ h1 {
 	margin-bottom: 10px;
 	color: var(--text-color-heading);
 	letter-spacing: 0.03125em;
+	position: relative;
+	transition: text-shadow 200ms ease;
+}
+
+h1:hover {
+	text-shadow: -0.0625em 0.0625em rgb(240 56 165), -0.125em 0.125em rgb(243 156 35),
+		-0.1875em 0.1875em rgb(254 100 54);
+}
+
+h1::before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	letter-spacing: inherit;
+	color: transparent;
+	transition: text-shadow 200ms ease;
+	font-family: inherit;
+}
+
+h1:hover::before {
+	text-shadow: 0.1875em -0.1875em rgb(174, 44, 218),
+		0.125em -0.125em rgb(213, 216, 49), 0.0625em -0.0625em rgb(69, 203, 67);
+}
+
+@media (prefers-color-scheme: dark) {
+	h1:hover::before {
+		text-shadow: 0.1875em -0.1875em rgb(249 255 0), 0.125em -0.125em rgb(3 255 0),
+			0.0625em -0.0625em rgb(0 236 255);
+	}
 }
 
 h2 {
