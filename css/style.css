@@ -82,6 +82,7 @@ h1::before {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
 	letter-spacing: inherit;
 	color: transparent;
 	transition: text-shadow 200ms ease;
