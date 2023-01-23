@@ -70,11 +70,24 @@ h1 {
 	letter-spacing: 0.03125em;
 	position: relative;
 	transition: text-shadow 200ms ease;
+	--behind-shadow: -0.0625em 0.0625em rgb(240 56 165),
+		-0.125em 0.125em rgb(243 156 35), -0.1875em 0.1875em rgb(254 100 54);
+	--front-shadow-light: 0.1875em -0.1875em rgb(63, 174, 7),
+		0.125em -0.125em rgb(50, 206, 123), 0.0625em -0.0625em rgb(44, 175, 187);
+	--front-shadow-dark: 0.1875em -0.1875em rgb(249 255 0),
+		0.125em -0.125em rgb(3 255 0), 0.0625em -0.0625em rgb(0 236 255);
+}
+
+@media (prefers-contrast: less) {
+	h1 {
+		--behind-shadow: unset;
+		--front-shadow-light: unset;
+		--front-shadow-dark: unset;
+	}
 }
 
 h1:hover {
-	text-shadow: -0.0625em 0.0625em rgb(240 56 165), -0.125em 0.125em rgb(243 156 35),
-		-0.1875em 0.1875em rgb(254 100 54);
+	text-shadow: var(--behind-shadow);
 }
 
 h1::before {
@@ -90,14 +103,28 @@ h1::before {
 }
 
 h1:hover::before {
-	text-shadow: 0.1875em -0.1875em rgb(174, 44, 218),
-		0.125em -0.125em rgb(213, 216, 49), 0.0625em -0.0625em rgb(69, 203, 67);
+	text-shadow: var(--front-shadow-light);
 }
 
 @media (prefers-color-scheme: dark) {
 	h1:hover::before {
-		text-shadow: 0.1875em -0.1875em rgb(249 255 0), 0.125em -0.125em rgb(3 255 0),
-			0.0625em -0.0625em rgb(0 236 255);
+		text-shadow: var(--front-shadow-dark);
+	}
+}
+
+@media (hover: none) {
+	h1 {
+		text-shadow: var(--behind-shadow);
+	}
+
+	h1::before {
+		text-shadow: var(--front-shadow-light);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		h1::before {
+			text-shadow: var(--front-shadow-dark);
+		}
 	}
 }
 
@@ -196,6 +223,7 @@ header {
 img.portrait {
 	width: 100px;
 	border-radius: 50%;
+	box-shadow: -5px 5px 14px rgb(0 0 0 / 15%);
 }
 
 #intro {
