@@ -72,7 +72,7 @@ h1 {
 	transition: text-shadow 200ms ease;
 	--behind-shadow: -0.0625em 0.0625em rgb(240 56 165),
 		-0.125em 0.125em rgb(243 156 35), -0.1875em 0.1875em rgb(254 100 54);
-	--front-shadow-light: 0.1875em -0.1875em rgb(63, 174, 7),
+	--front-shadow-light: 0.1875em -0.1875em rgb(224 229 92),
 		0.125em -0.125em rgb(50, 206, 123), 0.0625em -0.0625em rgb(44, 175, 187);
 	--front-shadow-dark: 0.1875em -0.1875em rgb(240, 243, 55),
 		0.125em -0.125em rgb(3 255 0), 0.0625em -0.0625em rgb(0 236 255);
