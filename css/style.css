@@ -69,7 +69,7 @@ h1 {
 	color: var(--text-color-heading);
 	letter-spacing: 0.03125em;
 	position: relative;
-	transition: text-shadow 200ms ease;
+	transition: text-shadow 250ms ease;
 	--behind-shadow: -0.0625em 0.0625em rgb(240 56 165),
 		-0.125em 0.125em rgb(243 156 35), -0.1875em 0.1875em rgb(254 100 54);
 	--front-shadow-light: 0.1875em -0.1875em rgb(224 229 92),
@@ -102,8 +102,9 @@ h1::before {
 	width: 100%;
 	letter-spacing: inherit;
 	color: transparent;
-	transition: text-shadow 200ms ease;
+	transition: text-shadow 250ms ease;
 	font-family: inherit;
+	text-shadow: 0 0 transparent;
 }
 
 h1:hover::before {
