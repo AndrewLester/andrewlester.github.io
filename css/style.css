@@ -105,6 +105,7 @@ h1::before {
 	transition: text-shadow 250ms ease;
 	font-family: inherit;
 	text-shadow: 0 0 transparent;
+	pointer-events: none;
 }
 
 h1:hover::before {
