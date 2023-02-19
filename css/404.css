@@ -14,7 +14,7 @@ h1 {
 	font-size: 33.333vh;
 	line-height: 1;
 	margin: 0;
-	overflow: hidden;
+	overflow-y: clip;
 }
 
 h1 > span {
