@@ -187,6 +187,7 @@ header {
 	will-change: transform;
 	overflow: hidden;
 	background-color: var(--surface-light-transparent);
+	-webkit-backdrop-filter: blur(8px) contrast(1.5);
 	backdrop-filter: blur(8px) contrast(1.5);
 	width: 100vw;
 	z-index: 5;
