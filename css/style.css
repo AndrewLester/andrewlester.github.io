@@ -443,8 +443,8 @@ p.background:first-of-type {
 	#projects h1 {
 		margin-bottom: 40px;
 	}
-	#projects .project {
-		flex-direction: column;
+	#projects .project:nth-of-type(n) {
+		flex-direction: column-reverse;
 		gap: 0px;
 	}
 	#projects .project img.project-img,
@@ -455,7 +455,6 @@ p.background:first-of-type {
 		align-self: center;
 	}
 	#projects .project > :last-child {
-		order: -1;
 		align-self: flex-start;
 	}
 }
