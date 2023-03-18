@@ -29,6 +29,14 @@
 			name="google-site-verification"
 			content="Rc3pRZdrxnIXYAiKIegGYVXHXUExQ9h5KomD3xA7zss"
 		/>
+
+		<!-- Prefetch Joust to get Render to spin it up -->
+		<link
+			rel="prefetch"
+			as="document"
+			href="https://joust.onrender.com"
+			fetchpriority="low"
+		/>
 	</head>
 
 	<body>
@@ -104,12 +112,67 @@
 		<section id="projects">
 			<div>
 				<h1 data-text="Projects">Projects</h1>
+				<!-- add this in later sometime...: https://www.linkedin.com/posts/ginocorrales_iamcaterpillar-yosoycaterpillar-hacking-activity-7035475496003932160-fVnN?utm_source=share&utm_medium=member_desktop -->
 				<h2 class="sr-only">2022</h2>
 				<div class="project">
 					<div>
 						<h3>
+							<a href="https://coko.foundation/" id="coko-link" class="social">
+								<img src="/assets/images/coko.svg" width="30" alt="Coko Logo" />
+								Coko - Hack4Impact
+							</a>
+						</h3>
+						<h4>August - December 2022</h4>
+						<p>
+							Coko is a San Francisco based nonprofit that builds open-source tools
+							for the publishing community. With Hack4Impact, I worked on their
+							project Kotahi, an easy to use scholarly publishing platform. Kotahi
+							helps manage the entire publishing workflow for both journals and
+							authors. We added support for custom digital-object identifier suffixes
+							and reworked several key user flows.
+						</p>
+					</div>
+					<a href="https://kotahi.community/community/">
+						<img
+							src="/assets/images/kotahi-dashboard.png"
+							alt="Kotahi dashboard"
+							class="project-img"
+						/>
+					</a>
+				</div>
+				<div class="project">
+					<div>
+						<h3>
+							<a href="/joust" id="joust-link" class="social">
+								<img src="/assets/images/joust.svg" height="30" alt="Joust Logo" />
+								Joust
+							</a>
+						</h3>
+						<h4>June - August 2022</h4>
+						<p>
+							Joust is an online, realtime multiplayer game that turns stressful
+							decision making into a fun activity. The web app features a bracket
+							style matchup mechanism to improve decision quality, and it also bring
+							about a whimsical design and play style to encourage participation. The
+							project was a team effort by
+							<a href="https://www.viget.com" class="social inline in-text">
+								<svg>
+									<use xlink:href="/assets/icons.svg#viget"></use>
+								</svg>
+								Viget</a
+							>
+							interns, with my work comprising the frontend implementation.
+						</p>
+					</div>
+					<a href="/joust">
+						<img src="/assets/images/joust.png" alt="Joust" class="project-img" />
+					</a>
+				</div>
+				<div class="project">
+					<div>
+						<h3>
 							<a
-								href="https://zubhub.unstructured.studio/"
+								href="https://unstructured.studio/zubhub"
 								id="unstructured-studio-link"
 								class="social"
 							>
@@ -124,8 +187,8 @@
 						<h4>January - May 2022</h4>
 						<p>
 							Unstructured Studio is a Canada-based nonprofit that helps foster a
-							tinkering mindset among children from under-resourced communities. I am
-							working with Hack4Impact to improve and add features to their product
+							tinkering mindset among children from under-resourced communities. I
+							worked with Hack4Impact to improve and add features to their product
 							ZubHub, a social network for kids to share their personal projects with
 							others. ZubHub also acts as a place to explore ideas for future
 							projects through partnerships with other Unstructured Studio programs.
@@ -173,6 +236,7 @@
 							src="/assets/images/typematch-homepage.png"
 							alt="TypeMatch homepage"
 							class="project-img"
+							loading="lazy"
 						/>
 					</a>
 				</div>

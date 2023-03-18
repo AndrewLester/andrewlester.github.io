@@ -116,6 +116,14 @@ h1:hover::before {
 	h1:hover::before {
 		text-shadow: var(--front-shadow-dark);
 	}
+
+	#joust-link > img {
+		filter: invert(1);
+	}
+
+	#coko-link > img {
+		filter: brightness(100);
+	}
 }
 
 @media (hover: none) or (pointer: coarse) {
@@ -285,12 +293,12 @@ img.portrait {
 
 #projects .project img.project-img,
 #projects .project video.project-img {
-	border-radius: 20px;
+	border-radius: 10px;
 	width: 400px;
 }
 
-#projects .project:nth-of-type(2n + 1) > :last-child {
-	order: -1;
+#projects .project:nth-of-type(even) {
+	flex-direction: row-reverse;
 }
 
 #projects > p {
@@ -339,6 +347,11 @@ header div h1 {
 	z-index: 1;
 }
 
+.social.inline.in-text {
+	margin-inline: -4px;
+	padding-inline: 6px;
+}
+
 .social.inline :where(svg, img) {
 	height: calc(1em + 3px);
 	width: calc(1em + 3px);
@@ -376,6 +389,10 @@ header div h1 {
 
 #typematch-link > svg {
 	color: white;
+}
+
+#coko-link {
+	gap: 7.5px;
 }
 
 #update-scheduler-link > img {
