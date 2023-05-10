@@ -405,7 +405,7 @@ header div h1 {
 	}
 
 	#yahoo-link > img {
-		filter: brightness(100);
+		filter: grayscale(100%) brightness(100);
 	}
 
 	#update-scheduler-link > img {
