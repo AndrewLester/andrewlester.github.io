@@ -404,6 +404,10 @@ header div h1 {
 		--icon-color: white;
 	}
 
+	#yahoo-link > img {
+		filter: brightness(100);
+	}
+
 	#update-scheduler-link > img {
 		filter: unset;
 	}
