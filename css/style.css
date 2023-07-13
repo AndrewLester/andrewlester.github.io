@@ -402,6 +402,10 @@ header div h1 {
 	filter: brightness(0);
 }
 
+.dim {
+	opacity: 0.85;
+}
+
 @media (prefers-color-scheme: dark) {
 	#hackillinois-link {
 		--icon-color: white;
