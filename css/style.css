@@ -11,6 +11,7 @@
 	--blue-light: #0b65c2;
 	--blue-lighter: rgb(110, 164, 255);
 	--teal-light: rgb(219, 233, 233);
+	--gold: rgb(224, 167, 11);
 
 	--email-red: var(--red-light);
 	--linkedin-blue: var(--blue-light);
@@ -161,10 +162,31 @@ h4 {
 	opacity: 0.65;
 }
 
-p {
+p,
+li {
 	font-size: clamp(18px, 2.5vw, 22px);
-	line-height: 1.25;
+	line-height: 1.5;
 	margin-bottom: 15px;
+	opacity: 0.85;
+}
+
+li {
+	padding-left: 5px;
+}
+
+p {
+	max-width: 55ch;
+	margin: 20px auto;
+}
+
+p.background:first-of-type {
+	margin-top: 30px;
+}
+
+ul {
+	padding-left: clamp(1rem, 2.5vw, 2rem);
+	margin-left: unset;
+	margin-bottom: 60px;
 }
 
 a {
@@ -340,6 +362,10 @@ header div h1 {
 	transition: background-color var(--transition-duration) ease;
 }
 
+.social :where(svg, img) {
+	border-radius: 2.5px;
+}
+
 .social.inline {
 	position: relative;
 	display: inline;
@@ -394,6 +420,18 @@ header div h1 {
 	color: white;
 }
 
+#code-in-the-dark-link > svg {
+	color: var(--gold);
+}
+
+#ntpal-link > svg {
+	color: var(--navy);
+}
+
+#ocf-link > img {
+	filter: invert(1);
+}
+
 #coko-link {
 	gap: 7.5px;
 }
@@ -426,17 +464,6 @@ div.social-row {
 	gap: 10px;
 	margin-left: -15px;
 	font-size: 24px;
-}
-
-p {
-	max-width: 55ch;
-	margin: 20px auto;
-	opacity: 0.85;
-	line-height: 1.5;
-}
-
-p.background:first-of-type {
-	margin-top: 30px;
 }
 
 .sr-only {
@@ -498,6 +525,14 @@ p.background:first-of-type {
 	}
 	#projects {
 		padding-inline: 10px;
+	}
+	ul {
+		padding-left: 0;
+		list-style-type: none;
+	}
+	li {
+		margin-left: -8px;
+		padding-left: 0;
 	}
 }
 
