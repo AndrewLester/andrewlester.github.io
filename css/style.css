@@ -155,6 +155,7 @@ h2 {
 
 h3 {
 	font-size: 1.5rem;
+	margin-bottom: 5px;
 }
 
 h4 {
@@ -164,17 +165,13 @@ h4 {
 
 p,
 li {
-	font-size: clamp(18px, 2.5vw, 22px);
 	line-height: 1.5;
 	margin-bottom: 15px;
 	opacity: 0.85;
 }
 
-li {
-	padding-left: 5px;
-}
-
 p {
+	font-size: clamp(18px, 2.5vw, 22px);
 	max-width: 55ch;
 	margin: 20px auto;
 }
@@ -184,9 +181,19 @@ p.background:first-of-type {
 }
 
 ul {
-	padding-left: clamp(1rem, 2.5vw, 2rem);
+	display: flex;
 	margin-left: unset;
 	margin-bottom: 60px;
+	list-style-type: none;
+	flex-flow: row wrap;
+	gap: 10px;
+}
+
+ul .social {
+	display: flex;
+	align-items: center;
+	font-size: clamp(1rem, 2.5vw, 18px);
+	border: 1px solid var(--text-color);
 }
 
 a {
@@ -305,7 +312,7 @@ img.portrait {
 }
 
 #projects h4 {
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 #projects .project {
@@ -364,6 +371,7 @@ header div h1 {
 
 .social :where(svg, img) {
 	border-radius: 2.5px;
+	flex-shrink: 0;
 }
 
 .social.inline {
@@ -495,6 +503,14 @@ div.social-row {
 	#projects .project > :last-child {
 		align-self: flex-start;
 	}
+	ul li {
+		width: 100%;
+		text-align: center;
+	}
+	ul .social {
+		flex-flow: column;
+		padding-inline: 20px;
+	}
 }
 
 @media only screen and (max-width: 800px) {
@@ -525,14 +541,6 @@ div.social-row {
 	}
 	#projects {
 		padding-inline: 10px;
-	}
-	ul {
-		padding-left: 0;
-		list-style-type: none;
-	}
-	li {
-		margin-left: -8px;
-		padding-left: 0;
 	}
 }
 
