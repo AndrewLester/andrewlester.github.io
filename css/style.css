@@ -433,7 +433,7 @@ header div h1 {
 }
 
 #ntpal-link > svg {
-	color: var(--navy);
+	color: var(--text-color-heading);
 }
 
 #ocf-link > img {
