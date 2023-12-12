@@ -375,13 +375,11 @@ header div h1 {
 }
 
 .social.inline {
-	position: relative;
 	display: inline;
 	margin-right: -8px;
 	margin-left: -4px;
 	vertical-align: baseline;
 	white-space: nowrap;
-	z-index: 1;
 }
 
 .social.inline.in-text {
@@ -398,6 +396,7 @@ header div h1 {
 .social:focus,
 .social:hover {
 	background-color: var(--surface-hover);
+	position: relative;
 }
 
 .social:active {
