@@ -469,6 +469,10 @@ header div h1 {
 		filter: grayscale(100%) brightness(100);
 	}
 
+	#jump-link > svg {
+		filter: grayscale(100%) brightness(100);
+	}
+
 	#update-scheduler-link > img {
 		filter: unset;
 	}
