@@ -19,7 +19,8 @@
 	--surface-light: white;
 	--surface-light-transparent: rgba(255, 255, 255, 0.8);
 	--surface-dark: var(--teal-light);
-	--text-color: black;
+	--text-color-rgb: 0, 0, 0;
+	--text-color: rgba(var(--text-color-rgb), 1);
 	--text-color-heading: var(--navy);
 	--surface-hover: rgba(0, 0, 0, 0.1);
 	--surface-active: rgba(0, 0, 0, 0.2);
@@ -35,7 +36,7 @@
 		--email-red: var(--red-lighter);
 		--linkedin-blue: var(--blue-lighter);
 		--resume-teal: var(--teal-lighter);
-		--text-color: white;
+		--text-color-rgb: 255, 255, 255;
 		--surface-light: rgb(34, 39, 46);
 		--surface-light-transparent: rgba(34, 39, 46, 0.8);
 		--surface-dark: rgb(28, 33, 40);
@@ -150,7 +151,7 @@ h1:hover::before {
 h2 {
 	font-size: 2rem;
 	margin-bottom: 25px;
-	border-bottom: 2px solid var(--text-color);
+	border-bottom: 2px solid rgba(var(--text-color-rgb), 0.75);
 	padding-bottom: 5px;
 }
 
@@ -194,7 +195,13 @@ ul .social {
 	display: flex;
 	align-items: center;
 	font-size: clamp(1rem, 2.5vw, 18px);
-	border: 1px solid var(--text-color);
+	background-color: var(--surface-hover);
+	border: 1px solid transparent;
+	transition: border-color 150ms ease;
+}
+
+ul .social:where(:hover, :focus-visible) {
+	border-color: rgba(var(--text-color-rgb), 0.75);
 }
 
 a {
@@ -395,7 +402,7 @@ header div h1 {
 	vertical-align: text-top;
 }
 
-.social:focus,
+.social:focus-visible,
 .social:hover {
 	background-color: var(--surface-hover);
 	z-index: 1;
