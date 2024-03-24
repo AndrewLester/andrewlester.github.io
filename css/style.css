@@ -197,7 +197,7 @@ ul .social {
 	font-size: clamp(1rem, 2.5vw, 18px);
 	background-color: var(--surface-hover);
 	border: 1px solid transparent;
-	transition: border-color 150ms ease;
+	transition: border-color var(--transition-duration) ease, background-color var(--transition-duration) ease;
 }
 
 ul .social:where(:hover, :focus-visible) {
