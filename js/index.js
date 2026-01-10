@@ -17,12 +17,13 @@ headerFixed.id = "intro-header-fixed";
 headerFixed.innerHTML = header.innerHTML;
 const projects = document.getElementById("projects");
 
-const diff = window.scrollY - projects.offsetTop;
-headerFixed.hidden = diff <= 0;
+// const diff = window.scrollY - projects.offsetTop;
+// headerFixed.hidden = diff <= 0;
 
-document.body.prepend(headerFixed);
+// document.body.prepend(headerFixed);
 
-window.onscroll = () => {
+// window.onscroll
+const onscroll = () => {
 	const diff = window.scrollY - projects.offsetTop;
 	headerFixed.classList.toggle("fixed", diff > 0);
 	if (diff > 0) {
